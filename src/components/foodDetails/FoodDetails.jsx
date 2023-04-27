@@ -51,7 +51,7 @@ const FoodDetails = () => {
         <div className={classes.right}>
           <h2 className={classes.title}>{foodDetails?.title}</h2>
           <div className={classes.price}>
-            Price: <span>$</span> {foodDetails?.price}
+            Price: <span>₹</span> {foodDetails?.price}
           </div>
           <div className={classes.quantity}>
             <button disabled={quantity === 1} onClick={() => changeQuantity('dec')}>-</button>
@@ -65,7 +65,7 @@ const FoodDetails = () => {
           <div className={classes.productDesc}>
             <div>Description: </div>
             <p>
-              {foodDetails?.desc?.length > 50 ? `${foodDetails?.desc}`.slice(0, 50) : foodDetails?.desc}
+              {foodDetails?.desc?.length > 200 ? `${foodDetails?.desc}`.slice(0, 200) : foodDetails?.desc}
             </p>
           </div>
           <button onClick={addToCart} className={classes.addToCart}>Add To Cart <AiOutlineShoppingCart /></button>

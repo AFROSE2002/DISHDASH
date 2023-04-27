@@ -38,7 +38,7 @@ const FoodCatalog = () => {
               </div>
               <div className={classes.foodDetails}>
                 <h4 className={classes.foodTitle}>{f?.title}</h4>
-                <span className={classes.price}><span>$</span> {f?.price}</span>
+                <span className={classes.price}><span>₹</span> {f?.price}</span>
               </div>
             </Link>
           )) : <h1 className={classes.noQuantity}>No {foodEndpoint} right now</h1>}

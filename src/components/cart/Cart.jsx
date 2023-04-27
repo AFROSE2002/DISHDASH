@@ -36,7 +36,7 @@ const Cart = () => {
                   <h3 className={classes.title}>{product.title}</h3>
                   <div className={classes.productAndQuantity}>
                     <span className={classes.quantity}>{product.quantity} x </span>
-                    <span className={classes.price}><span>$</span>{product.price}</span>
+                    <span className={classes.price}><span>₹</span>{product.price}</span>
                   </div>
                 </div>
               </div>
@@ -45,7 +45,7 @@ const Cart = () => {
         <div className={classes.right}>
           <div className={classes.totalProductMsg}>Total products: {products.length}</div>
           <div className={classes.subtotalCheckoutBtns}>
-            <span className={classes.subtotal}>Subtotal: ${totalPrice}</span>
+            <span className={classes.subtotal}>Subtotal: ₹{totalPrice}</span>
             <span onClick={handleOrder} disabled={products.length === 0} className={classes.orderNowBtn}>Order now</span>
           </div>
         </div>
